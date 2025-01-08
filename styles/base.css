@@ -1,0 +1,146 @@
+h1 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+  
+
+body {
+    margin: 0px;
+    font-family: "Parkinsans", serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    background-color: darkslategray;
+    padding: 20px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: white;
+    background-color: #343434;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 0;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:hover {
+    box-shadow: inset 500px 0 0 0 #54b3d6;
+    color: black;
+}
+
+.main-wrapper {
+    align-self: center;
+    width: 100%;
+    max-width: 1480px;
+    min-width: 1140px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 10px;
+}
+
+.card {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.card h1 {
+    color: white;
+    background-color: darkslategray;
+    padding: 10px;
+    text-align: center;
+}
+
+.left-content-wrapper {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.portrait-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.portrait-wrapper img {
+    padding-top: 10px;
+    width: 100%;
+}
+
+main {
+    justify-content: center;
+}
+
+main img {
+    float: left;
+    width: 300px;
+    padding: 20px;
+}
+
+main h2 {
+    text-align: center;
+    border-bottom: 1px solid;
+    margin: 0 150px 10px 150px;
+}
+
+main p { 
+    padding: 20px;
+    font-size: 20px;
+}
+
+.resource-links {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 80px;
+    align-items: left;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    background-color: darkslategray;
+}
+
+footer h4 {
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+}
+
+footer p {
+    color: yellow;
+    font-size: 18px;
+    padding: 15px;
+}
