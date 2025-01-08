@@ -2,7 +2,7 @@ h1 {
     margin: 0;
 }
 
-h4 {
+h2 {
     margin: 0;
 }
 
@@ -73,7 +73,7 @@ a:hover {
     grid-template-rows: 50px 1fr;
 }
 
-.card h1 {
+.card h2 {
     color: white;
     background-color: darkslategray;
     padding: 10px;
@@ -107,10 +107,11 @@ main img {
     padding: 20px;
 }
 
-main h2 {
+main h3 {
     text-align: center;
     border-bottom: 1px solid;
-    margin: 0 150px 10px 150px;
+    margin: 0 150px 0 150px;
+    font-size: 23px;
 }
 
 main p { 
@@ -131,12 +132,6 @@ main p {
 footer {
     text-align: center;
     background-color: darkslategray;
-}
-
-footer h4 {
-    color: white;
-    font-size: 20px;
-    padding: 15px;
 }
 
 footer p {
