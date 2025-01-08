@@ -107,11 +107,13 @@ main img {
     padding: 20px;
 }
 
-main h3 {
+.left-content-wrapper h2 {
     text-align: center;
     border-bottom: 1px solid;
     margin: 0 150px 0 150px;
     font-size: 23px;
+    color: black;
+    background-color: white;
 }
 
 main p { 
