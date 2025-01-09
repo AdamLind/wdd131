@@ -15,7 +15,9 @@ a {
     font-size: 20px;
 }
 
-
+ul {
+    margin: 0;
+}
   
 
 body {
@@ -127,7 +129,6 @@ main p {
     flex-direction: column;
     height: 100%;
     padding-left: 80px;
-    align-items: left;
     justify-content: center;
 }
 
