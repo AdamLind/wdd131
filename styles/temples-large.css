@@ -1,0 +1,43 @@
+@media screen and (min-width: 700px) {
+    .image-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+    }
+
+    nav {
+        display: inline;
+        width: auto;
+    }
+
+    header {
+        padding: 0 30px;
+    }
+
+    .disappear {
+        display: inline;
+    }
+
+    .list-wrapper {
+        display: inline;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation li {
+        display: block; /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+		display: none;
+	}
+}
