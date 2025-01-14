@@ -6,6 +6,7 @@
 body {
     margin: 0;
     font-family: Roboto;
+    font-weight: 500;
 }
 
 a {
@@ -129,7 +130,8 @@ main {
 }
 
 img {
-    width: 350px;
+    width: 100%;
+    max-width: 380px;
 }
 
 footer {
