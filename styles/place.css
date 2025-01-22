@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #2bbdd4;
+    --secondary-color: #122d2e;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    height: 120px;
+}
+
+header h1 {
+    padding: 30px;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-img {
+    padding-bottom: 3px;
+    background-color: var(--secondary-color);
+    width: 100%;
+}
+
+.main-img img {
+    width: 100%;
+}
+
+.tables {
+    width: 100%
+}
+
+.data h2 {
+    padding-bottom: 20px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+}
+
+.lg-view {
+    display: none;
+}
+
+.weather-icon {
+    width: 80px;
+}
+
+#wind-chill {
+    font-weight: normal;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+footer p {
+    color: black;
+    font-size: 18px;
+    padding: 15px;
+    margin: 0;
+}
+
+#lastModified {
+    padding-top: 0px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W03 | Place</title>
+    <meta name="description" content="Responsive photo album for the week02 temples assignment.">
+    <meta name="author" content="Adam Lind">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/windChill.js" defer></script>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Antarctica</h1>
+    </header>
+    <main>
+        <picture class="main-img">
+            <source srcset="images/penguin-hero.webp" media="(min-width: 600px)">
+            <img src="/images/penguin.webp" alt="Madagascar Pic">
+        </picture>
+        <div class="tables data">
+            <h2>Data</h2>
+            <div>
+                <p><span>Area: </span>14.2 Million sq km</p>
+                <p><span>Population: </span>1,000 (Winter) - 5,000 (Summer)</p>
+                <p><span>Capital: </span>None</p>
+                <p><span>Languages: </span>English, Spanish, and Russian</p>
+                <p><span>Currency: </span>None</p>
+                <p><span>Time Zone: </span>All Time Zones</p>
+                <p><span>Calling Code: </span>+672</p>
+                <p><span>Internet TLD: </span>.aq</p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="tables weather">
+            <h2 class="sm-view">Weather</h2>
+            <h2 class="lg-view">Weather   🌦️</h2>
+            <img class="weather-icon" src="/images/weather-icon.svg" alt="Sunrise Icon">
+            <div>
+                <p><span>Temperature: </span>-11 ºF</p>
+                <p><span>Conditions: </span>Snow flurries. Ice fog.</p>
+                <p><span>Wind: </span>15 mph</p>
+                <p><span>Wind Chill: </span><span id="wind-chill"></span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ♦️ Adam Lind ♦️ UT, United States of America</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
