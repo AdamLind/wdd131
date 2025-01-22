@@ -63,10 +63,6 @@ span {
     background-color: lightgray;
 }
 
-.lg-view {
-    display: none;
-}
-
 .weather-icon {
     width: 80px;
 }

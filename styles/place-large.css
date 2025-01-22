@@ -60,16 +60,12 @@
         display: block;
     }
 
-    .sm-view {
-        display: none;
-    }
-
-    .lg-view {
-        display: inline;
-    }
-
     .divider {
         display: none;
+    }
+
+    .weather h2::after {
+        content: "   🌦️"
     }
 
     .weather img {
