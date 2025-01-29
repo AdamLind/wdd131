@@ -121,7 +121,7 @@ main {
 
 #card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 355px);
+    grid-template-columns: 355px;
     justify-content: center;
     align-items: center;
     gap: 20px;
