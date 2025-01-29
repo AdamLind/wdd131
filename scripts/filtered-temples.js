@@ -105,7 +105,7 @@ homeLink.addEventListener("click", () => {
 
 oldTempleLink.addEventListener("click", () => {
 	subtitle.textContent = "Old Temples"
-	let filteredTemples = temples.filter(temple => temple.dedicated.substring(0, 4) < 2000)
+	let filteredTemples = temples.filter(temple => temple.dedicated.substring(0, 4) < 1900)
 	createTempleCards(filteredTemples)
 	event.preventDefault()
 }) 
