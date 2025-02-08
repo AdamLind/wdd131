@@ -51,7 +51,7 @@ body {
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-a:hover {
+.navbar a:hover {
     box-shadow: inset 500px 0 0 0 #54b3d6;
     color: black;
 }
@@ -124,17 +124,31 @@ main p {
 }
 
 .resource-links {
+    margin-top: 10px;
+}
+
+.resource-links a {
     grid-row: 2;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    padding-left: 80px;
     justify-content: center;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.resource-links a:hover {
+    box-shadow: inset 500px 0 0 0 rgb(157, 229, 255);
+    color: black;
 }
 
 .project-link {
     color: rgb(224, 72, 22);
-} 
+}
+
 
 footer {
     text-align: center;
