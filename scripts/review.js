@@ -5,6 +5,10 @@ window.onload = function() {
     const product = params.get('Select')
     const response = document.getElementById('response')
     const ratingContainer = document.getElementById('rating')
+    
+    rating = document.createElement('h4')
+    rating.textContent = `You rated the ${products[product]} ${stars}/5 stars.`
+    ratingContainer.appendChild(rating)
 
     const products = {
           "fc-1888": "flux capacitor",
@@ -29,30 +33,18 @@ window.onload = function() {
     }
 
     if (parseInt(stars) < 3 ) {
-        rating = document.createElement('h4')
-        rating.textContent = `You rated the ${products[product]} ${stars}/5 stars.`
-        ratingContainer.appendChild(rating)
-
         response.textContent = `We\'re sorry to hear you didn\'t like the ${products[product]}. Reach out to our customer service if you need any help!`
 
         service_number = document.createElement('h4')
         service_number.textContent = 'Customer Service Phone #: 444-444-4444'
         response.appendChild(service_number)
     } else if (parseInt(stars) == 3 ) {
-        rating = document.createElement('h4')
-        rating.textContent = `You rated the ${products[product]} ${stars}/5 stars.`
-        ratingContainer.appendChild(rating)
-
         response.textContent = `What's something we can do to improve the quality of the ${products[product]}? Reach out to our customer service!`
 
         service_number = document.createElement('h4')
         service_number.textContent = 'Customer Service Phone #: 444-444-4444'
         response.appendChild(service_number)
     } else {
-        rating = document.createElement('h4')
-        rating.textContent = `You rated the ${products[product]} ${stars}/5 stars!`
-        ratingContainer.appendChild(rating)
-        
         response.textContent = `Thank you for your review!`
     }
 };
