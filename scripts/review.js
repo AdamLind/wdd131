@@ -5,11 +5,6 @@ window.onload = function() {
     const product = params.get('Select')
     const response = document.getElementById('response')
     const ratingContainer = document.getElementById('rating')
-    
-    rating = document.createElement('h4')
-    rating.textContent = `You rated the ${products[product]} ${stars}/5 stars.`
-    ratingContainer.appendChild(rating)
-
     const products = {
           "fc-1888": "flux capacitor",
           "fc-2050": "power laces",
@@ -17,6 +12,10 @@ window.onload = function() {
           "ac-2000": "low voltage reactor",
           "jj-1969": "warp equalizer"
     };
+    
+    rating = document.createElement('h4')
+    rating.textContent = `You rated the ${products[product]} ${stars}/5 stars.`
+    ratingContainer.appendChild(rating)
 
     if (visitCount === null) {
       visitCount = 1;
