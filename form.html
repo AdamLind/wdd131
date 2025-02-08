@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Product Review</title>
+    <meta name="description" content="Responsive product review form for the W05 Assignment: Product Review Form.">
+    <meta name="author" content="Adam Lind">
 
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
     <script src="scripts/getdates.js" defer></script>
@@ -15,7 +19,9 @@
 
 </head>
 <body>
-    <header>Product Review</header>
+    <header>
+        <h1>Product Review</h1>
+    </header>
 
     <form action="review.html" method="get">
 
@@ -27,21 +33,21 @@
         </div>
 
         <div class="containers">
-            <label for="star-rating">Overall Rating</label>
+            <div>Overall Rating</div>
             <div class="star-rating">
-                <input type="radio" name="stars" id="star-a" value="5" required/>
+                <input type="radio" name="stars" id="star-a" value="5" required>
                 <label for="star-a"></label>
           
-                <input type="radio" name="stars" id="star-b" value="4"/>
+                <input type="radio" name="stars" id="star-b" value="4">
                 <label for="star-b"></label>
             
-                <input type="radio" name="stars" id="star-c" value="3"/>
+                <input type="radio" name="stars" id="star-c" value="3">
                 <label for="star-c"></label>
             
-                <input type="radio" name="stars" id="star-d" value="2"/>
+                <input type="radio" name="stars" id="star-d" value="2">
                 <label for="star-d"></label>
             
-                <input type="radio" name="stars" id="star-e" value="1"/>
+                <input type="radio" name="stars" id="star-e" value="1">
                 <label for="star-e"></label>
             </div>
         </div>
