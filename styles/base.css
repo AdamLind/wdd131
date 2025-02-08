@@ -132,6 +132,10 @@ main p {
     justify-content: center;
 }
 
+.project-link {
+    color: rgb(224, 72, 22);
+} 
+
 footer {
     text-align: center;
     background-color: darkslategray;
