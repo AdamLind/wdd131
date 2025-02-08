@@ -33,7 +33,7 @@ window.onload = function() {
         rating.textContent = `You rated the ${products[product]} ${stars}/5 stars.`
         ratingContainer.appendChild(rating)
 
-        response.textContent = `We\'re sorry to hear you didn\'t like the ${products[product]}. Reach out to our customer if you need any help!`
+        response.textContent = `We\'re sorry to hear you didn\'t like the ${products[product]}. Reach out to our customer service if you need any help!`
 
         service_number = document.createElement('h4')
         service_number.textContent = 'Customer Service Phone #: 444-444-4444'
