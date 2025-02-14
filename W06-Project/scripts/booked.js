@@ -48,7 +48,7 @@ window.onload = function() {
     }
 
     message = document.createElement('p')
-    message.textContent = `Hi, ${name}, you have booked your ${service} for ${eventDate}. If this is not correct, please reach out to us at the number below:`
+    message.textContent = `Hi, ${name}, you have booked your ${service} for ${eventDate}. If this is incorrect, please reach out to us at the number below:`
     ticketMessage.append(message)
     
     service_number = document.createElement('h4')
