@@ -44,7 +44,7 @@ window.onload = function() {
         localStorage.setItem('visitCount', visitCount);
     } else {
         localStorage.setItem('visitCount', visitCount);
-        document.getElementById('visit-counter').textContent = `🌺 Thank you for booking your ${service} with us! This is event #${visitCount} with Lind Floral! 🌺`;
+        document.getElementById('visit-counter').textContent = `🌺 Thank you for booking your ${service} with us! This is event #${visitCount} you've booked with Lind Floral! 🌺`;
     }
 
     message = document.createElement('p')
