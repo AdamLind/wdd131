@@ -1,0 +1,241 @@
+:root {
+    --primary-color: #EBE7E4;
+    --secondary-color: #564740;
+    --accent-color: #FCDFE4;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: Roboto;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+ul {
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondary-color);
+    padding: 10px 30px;
+    margin: 0 0 10px 0;
+    min-width: 300px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 128px;
+}
+
+#menu {
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+#menu::before {
+	content: "≡";
+}
+
+.list-wrapper {
+    background-color: var(--accent-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 58.5px;
+    height: 0px;
+    width: 100%;
+    max-width: 380px;
+    transition: height .6s;
+    overflow: hidden;
+}
+
+.list-wrapper.show {
+    height: 208px;
+}
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+    width: 100%;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--secondary-color);
+	font-weight: 600;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, .navigation a:active {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.home-images {
+    display: flex;
+    flex-direction: column;
+}
+
+
+img {
+    box-shadow: 0px 0px 15px;
+    margin: 20px 0px;
+}
+
+.description-wrapper {
+    justify-self: center;
+    justify-items: center;
+    width: 80%;
+    min-width: 275px;
+}
+
+.description {
+    text-indent: 40px;
+    margin: 20px 0;
+    padding: 20px;
+    max-width: 664px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 0px 2px var(--primary-color);
+    text-align: left;
+}
+
+.bottom-links {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bottom-links li {
+    background-color: var(--primary-color);
+    width: 80%;
+    max-width: 700px;
+    min-width: 275px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 0px 2px var(--primary-color);
+    border-radius: 5px;
+    text-align: center;
+    align-self: center;
+    transition: all .5s;
+}
+
+
+.bottom-links a:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.bottom-links a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--secondary-color);
+	font-weight: 600;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.contact-section {
+    text-align: center;
+    padding: 20px 0;
+    width: 80%;
+    max-width: 700px;
+    min-width: 275px;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 0px 2px var(--primary-color);
+}
+
+.contact-section h2, h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.contact-section a {
+    font-size: 15px;
+    margin: 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-width: 275px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+footer p {
+    color: var(--secondary-color);
+    font-size: 18px;
+    padding: 15px;
+    margin: 0;
+}
+
+@media screen and (min-width: 485px) {
+    main {
+        padding-bottom: 106px;
+    }
+}
+@media screen and (min-width: 700px) {
+    .home-images {
+        flex-direction: row;
+        gap: 30px;
+    }
+}

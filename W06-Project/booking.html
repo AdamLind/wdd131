@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Adam Lind</title>
+    <meta
+      name="description"
+      content="Homepage for Adam Lind in the WDD 131 - Dynamic Web Fundamentals class."
+    />
+    <meta name="author" content="Adam Lind" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/booking-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/booking.js" defer></script>
+  </head>
+  <body>
+    <header class="normal-head">
+      <div class="header">
+        <h1 class="title">Booking</h1>
+      </div>
+      <nav class="list-wrapper">
+        <ul class="navigation">
+          <li>
+            <a
+              href="index.html"
+              rel="noreferrer"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="booking.html"
+              rel="noreferrer"
+              >Booking</a
+              >
+            </li>
+            <li>
+              <a
+              href="about.html"
+              rel="noreferrer"
+              >About</a
+              >
+            </li>
+            <li>
+              <a
+              href="gallery.html"
+              rel="noreferrer"
+              >Gallery</a
+              >
+            </li>
+          </ul>
+      </nav>
+      <a id="menu" href="#"></a>
+    </header>
+    <main class="main-wrapper">
+      <h1>Book Now</h1>
+      <form action="booked.html" method="get">
+        
+        <div class="containers">
+            <label for="name">Your Name *</label>
+            <input type="text" name="name" id="name" class="bar-inputs" required>
+        </div>
+
+        <div class="containers">
+          <label for="email">Email *</label>
+          <input type="email" name="email" id="email" class="bar-inputs" required>
+        </div>
+
+        <div class="containers">
+            <label for="event-date">Date of Event *</label>
+            <input type="date" name="event-date" id="event-date"  class="bar-inputs" required>
+        </div>
+
+        <div class="containers">
+          <label for="budget">Budget *</label>
+          <div class="budget-wrapper">
+            <h2>$</h2>
+            <input type="number" id="budget" name="budget" class="bar-inputs" min="0" required>
+          </div>
+        </div>
+
+        <div class="containers">
+          <label for="select">Booking Type *</label>
+          <select name="Select" id="select" class="bar-inputs" required>
+            <option selected value="" disabled>Select a Product...</option>
+          </select>
+        </div>
+
+        <div class="containers">
+            <label for="details">Other Details <span class="optional-text">(Optional)</span></label>
+            <textarea name="details" id="details"></textarea>
+        </div>
+        
+
+
+        <input type="submit" value="Book Event">
+    </form>
+      <div class="contact-section">
+        <h2>Contact Me!</h2>
+        <a href="">Instagram handle</a>
+        <a href="">Facebook handle</a>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> ♦️ Lind Floral ♦️ UT, United
+        States of America
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
